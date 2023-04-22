@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+      <title>Digital clock</title>
+      <style>
+            *
+            {
+                  padding: 0px;
+                  margin: 0px;
+            }
+            body
+            {
+                  width:100% ;
+                  height: 100vh;
+                  background-size: 100% 100vh;
+            }
+            #Time,#Date,#Day,#Sec
+            {
+                  width: 100px;
+                  height: 50px;
+                  color: rgb(245, 152, 12);
+                  font-weight: bold;
+                  font-size: 70px;
+                  position: relative;
+                  left: 480px;
+                  top: 200px;
+                  text-shadow: 3px 3px 3px red;
+            }
+
+      </style>
+      <script src="./11-04-23Date.js" defer></script>
+</head>
+<body onload="clock()">
+      <DIV id="container">
+<h1 id="Time"></h1>
+<h1 id="Date"></h1>
+<h1 id="Day"></h1>
+</DIV>
+      <h1 id="Sec"></h1>
+      <div id="gret">
+            <h1 id="GreetMessage"></h1>
+            <p id="close" onclick="closewind()">x</p>
+            <video id="bgVid" autoplay muted loop></video>
+      </div>
+</body>
+</html>
